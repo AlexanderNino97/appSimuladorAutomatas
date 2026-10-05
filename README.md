@@ -32,6 +32,7 @@ python cli_pruebas.py
 ```
 
 ### Formato de gramática en la GUI
+```bash
 TERMINALES: a,b
 NO_TERMINALES: S,A,B
 INICIAL: S
@@ -39,6 +40,7 @@ PRODUCCIONES:
 S -> AB
 A -> aA | a
 B -> bB | b
+```
 
 > **Reglas del formato:**
 > - Una sección por línea; las líneas vacías y las que empiezan con `#` se ignoran.
