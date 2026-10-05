@@ -31,6 +31,21 @@ Para correr las pruebas automáticas en consola (sin GUI):
 python cli_pruebas.py
 ```
 
+### Formato de gramática en la GUI
+TERMINALES: a,b
+NO_TERMINALES: S,A,B
+INICIAL: S
+PRODUCCIONES:
+S -> AB
+A -> aA | a
+B -> bB | b
+
+> **Reglas del formato:**
+> - Una sección por línea; las líneas vacías y las que empiezan con `#` se ignoran.
+> - Las producciones se separan con `|` dentro de la misma línea.
+> - Los símbolos se separan con comas en TERMINALES y NO_TERMINALES.
+
+
 ## Estructura del proyecto
 
 - `dominio/`: Modelos de datos (Gramática, Árbol).
